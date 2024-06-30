@@ -21,6 +21,79 @@ header {
     padding: 20px;
 }
 
+header a img {
+    width: 100px;
+    height: 50px;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Banner styling */
+main > section {
+    background-color: #F5F5F5;
+    padding: 40px;
+}
+
+main > section h1 {
+    color: #333333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+main > section p {
+    color: #666666;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+main > section button {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+main > section button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styling for other elements */
+main > section div {
+    margin-bottom: 20px;
+}
+
+main > section div h2 {
+    color: #333333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+main > section div div img {
+    width: 100px;
+    height: 100px;
+}
+
+main > section div div h3 {
+    color: #333333;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+main > section div div p {
+    color: #666666;
+    font-size: 16px;
+}
 
 
 /* General styles */
@@ -195,43 +268,23 @@ nav a:hover {
 
 /* Banner styling */
 main > section.banner {
-    background-color: #F5F5
-
-
-header a img {
-    width: 100px;
-    height: 50px;
-}
-
-nav a {
-    color: #333333;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-nav a:hover {
-    color: #007BFF;
-}
-
-/* Banner styling */
-main > section {
     background-color: #F5F5F5;
     padding: 40px;
 }
 
-main > section h1 {
+main > section.banner h1 {
     color: #333333;
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-main > section p {
+main > section.banner p {
     color: #666666;
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-main > section button {
+main > section.banner button {
     background-color: #007BFF;
     color: #FFFFFF;
     border: none;
@@ -241,33 +294,288 @@ main > section button {
     border-radius: 5px;
 }
 
-main > section button:hover {
+main > section.banner button:hover {
     background-color: #0056b3;
 }
 
-/* Additional styling for other elements */
-main > section div {
+/* Centralize common styles */
+.container {
     margin-bottom: 20px;
 }
 
-main > section div h2 {
+.container h2 {
     color: #333333;
     font-size: 28px;
     margin-bottom: 10px;
 }
 
-main > section div div img {
+.container img {
     width: 100px;
     height: 100px;
 }
 
-main > section div div h3 {
+.container h3 {
     color: #333333;
     font-size: 20px;
     margin-bottom: 5px;
 }
 
-main > section div div p {
+.container p {
     color: #666666;
     font-size: 16px;
+}
+
+/* Quote section styling */
+main > section.quote {
+    background-color: #FFFFFF;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+main > section.quote img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+main > section.quote blockquote {
+    font-size: 24px;
+    font-style: italic;
+    color: #333333;
+    margin: 0;
+}
+
+main > section.quote .author {
+    font-size: 20px;
+    font-weight: bold;
+    color: #666666;
+    margin-top: 10px;
+}
+
+main > section.quote .text {
+    font-size: 16px;
+    color: #999999;
+    margin-top: 5px;
+}
+
+/* Videos list section styling */
+main > section.videos {
+    background-color: #F8F8F8;
+    padding: 40px;
+}
+
+main > section.videos h2 {
+    font-size: 32px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+main > section.videos .video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main > section.videos .video {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    padding: 20px;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+}
+
+main > section.videos .video img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+main > section.videos .video h3 {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+main > section.videos .video p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+main > section.videos .video .author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+main > section.videos .video .author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+main > section.videos .video .author h4 {
+    font-size: 18px;
+    color: #333333;
+}
+
+main > section.videos .video .rating {
+    display: flex;
+    align-items: center;
+}
+
+main > section.videos .video .rating img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+main > section.videos .video .rating p {
+    font-size: 16px;
+    color: #999999;
+}
+
+
+/* Membership section styling */
+main > section.membership {
+    background-color: #EFEFEF;
+    padding: 40px;
+}
+
+main > section.membership h2 {
+    font-size: 32px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+main > section.membership .membership-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main > section.membership .membership-item {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    padding: 20px;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+main > section.membership .membership-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+main > section.membership .membership-item h3 {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+main > section.membership .membership-item p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+main > section.membership .membership-item button {
+    background-color: #007BFF;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+main > section.membership .membership-item button:hover {
+    background-color: #0056b3;
+}
+
+
+/* FAQ section styling */
+main > section.faq {
+    background-color: #FFFFFF;
+    padding: 40px;
+}
+
+main > section.faq .faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main > section.faq .faq-row {
+    display: flex;
+    gap: 20px;
+}
+
+main > section.faq .faq-item {
+    background-color: #F9F9F9;
+    border: 1px solid #E0E0E0;
+    padding: 20px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+main > section.faq .faq-item h3 {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+main > section.faq .faq-item p {
+    font-size: 16px;
+    color: #666666;
+}
+
+
+/* Footer section styling */
+footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 40px 0;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .footer-logo {
+    flex: 1;
+}
+
+footer .footer-links {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer .footer-social {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+footer .footer-social img {
+    width: 24px;
+    height: 24px;
 }
