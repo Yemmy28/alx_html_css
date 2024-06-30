@@ -155,6 +155,49 @@ main > section.quote .text {
 }
 
 
+/* General styles */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header a img {
+    width: 100px;
+    height: 50px;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Banner styling */
+main > section.banner {
+    background-color: #F5F5
+
+
 header a img {
     width: 100px;
     height: 50px;
