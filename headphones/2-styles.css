@@ -1,0 +1,297 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --primary-color: #FF6565;
+    --secondary-color: #333;
+    --font-family: 'Source Sans Pro', sans-serif;
+    --max-width: 1000px;
+    --padding: 20px;
+}
+
+body {
+    font-family: var(--font-family);
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--padding);
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: var(--padding) 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover, nav a:active {
+    color: var(--primary-color);
+}
+
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero button:hover, .hero button:active {
+    opacity: 0.9;
+}
+
+
+
+body {
+    font-family: var(--font-family);
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--padding);
+}
+
+.what-we-do {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.what-we-do h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.service {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+.service .icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+}
+
+@media (max-width: 480px) {
+    .service {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+
+body {
+    font-family: var(--font-family);
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--padding);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Hero section styles */
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero button {
+    background: #ff6565;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* "What we do..." section styles */
+.what-we-do {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.what-we-do h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.service {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+.service .icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* "Our results" section styles */
+.our-results {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.our-results h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.result {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+.result img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.result h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.result p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Media queries */
+@media (max-width: 480px) {
+    .service,
+    .result {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
