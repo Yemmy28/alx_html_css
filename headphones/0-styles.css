@@ -1,103 +1,233 @@
-/* CSS Reset */
-* {
-    margin: 0;
+html,
+body {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-
-/* Variables */
-:root {
-    --primary-color: #FF6565;
-    --secondary-color: #333;
-    --font-family: 'Source Sans Pro', sans-serif;
-    --max-width: 1000px;
-    --padding: 20px;
+.container{
+    background-image: url(images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
-body {
-    font-family: var(--font-family);
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: var(--padding);
+.navbar{
+   align-items: center;
+   display: flex;
+   justify-content: space-around;
+   padding:20px;
+   color: #fff;
 }
-
-header {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: var(--padding) 0;
+.navbar input{
+    display: none;
 }
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar img{
+    width: 200px;
 }
-
-.logo img {
-    height: 50px;
+.navbar .HUMBURGER{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
+.navbar.HUMBURGER div{
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition:transform 0.3s, opacity 0.3 ;
+}
+.sec{
+    width: 15px !important;
+}
+.navbar .mobile-nav{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
 
-nav a {
-    color: white;
-    margin: 0 10px;
+}
+.navbar .mobile-nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+.navbar .nav-link{
+  display: flex;
+  gap: 15px;
+}
+.navbar .nav-link a {
+    color: #fff;
     text-decoration: none;
     font-size: 16px;
 }
-
-nav a:hover, nav a:active {
-    color: var(--primary-color);
+.nav-link a:active{
+    color: #FF6565;
 }
 
-.hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
+.homepage {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
 }
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+.homepage h1{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
 }
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.hero button {
-    padding: 10px 20px;
+.homepage h3{
     font-size: 16px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    cursor: pointer;
+    font-weight: bold;
+}
+.homepage p{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    width: 70%;
+}
+.homepage button{
+    color: #fff;
+    background-color: #FF6565;
+    width: 162px;
+    height: 44px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 20px 0;
+    border-color: #FF6565;
 }
 
-.hero button:hover, .hero button:active {
-    opacity: 0.9;
+@media (max-width:480px){
+    .navbar .logo{
+        order: 2;
+        text-align: center;
+        flex-grow: 1;
+    }
+    .navbar .nav-link{
+        display: none;
+    }
+    .navbar .HUMBURGER{
+        display: flex;
+        order: 1;
+    }
+    .navbar input[type='checkbox']{
+        display: none;
+    } 
+    .navbar input[type='checkbox']:checked~.mobile-nav{
+        display: flex;
+    }
+    .navbar input[type='checkbox']:checked~.HUMBURGER div:nth-child(1){
+        transform: rotate(45deg) translate(10px, 5px);
+         }
+    .navbar input[type='checkbox']:checked~.HUMBURGER div:nth-child(2) {
+        opacity: 0;
+    }
+   .navbar input[type='checkbox']:checked~.HUMBURGER div:nth-child(3) {
+       transform: rotate(-45deg) translate(10px, -5px);
+    }
 }
 
 
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .homepage h1{
+    font-size: 32px;
+    font-weight: bold;
+
+}
+.homepage p{
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+.homepage h1, .homepage p{margin: 0;}
+.homepage button{
+    color: #fff;
+    background-color: #FF6565;
+    width: 162px;
+    height: 44px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 40px;
+    border-color: #FF6565;
+
+} */
+
+
+
+
+
+
+/* @media only screen and (max-width:480px) {
+    header img {
+        width: 161px;
+        height: 32px;
+        bottom: 30px;
     }
 
-    header {
-        flex-direction: column;
-        align-items: flex-start;
+    nav li {
+        display: block;
+        margin-right: 0;
     }
 
-    nav a {
-        margin: 5px 0;
+    nav {
+        background-image: url(images/headphones_hero_1.jpg);
     }
 
-    .hero h1 {
-        font-size: 36px;
+    .home h1 {
+        font-size: 32px;
+        font-weight: bold;
     }
 
-    .hero p {
+    .home button {
+        color: #fff;
+        background-color: #FF6565;
+        width: 162px;
+        height: 44px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 40px;
+        border-color: #FF6565;
+
+    }
+
+    nav a:hover {
+        color: #979797;
+    }
+
+    .home p {
         font-size: 16px;
+        font-weight: bold;
+
     }
-}
+} */

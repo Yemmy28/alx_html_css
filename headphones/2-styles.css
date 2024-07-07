@@ -1,165 +1,102 @@
-/* CSS Reset */
-* {
+html{
+    width: 100%;
+    height: 100%;
+}
+.res{
+    background-image: url(images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.first{
+    text-align: center;
+    color: #fff;
+    /* margin: 300px; */
+}
+.result{
+    display: flex;
+    color: #fff;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.result div{
+    position: relative;
+    flex: 1 0 auto;
+}
+.result img{
+    width: 150px;
+    height: 150px;
+
+}
+.overlay{
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translate(-70%, -50%);
+    color: #fff;
+    display: block;
+    margin: 0;
+}
+.overlay p, .overlay h2{
+    margin: 5px;
+    
+}
+.overlay h2{
+   text-align: center;
+}
+.overlay p{
+    right: -50%;
+    font-size: 14px;
+}
+
+.over{
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translate(-70%, -50%);
+    color: #fff;
+    display: block;
+    margin: 0;
+}
+.over h2{
+    text-align: center;
+}
+.over h2, .over p{
+    margin: 5px;
+}
+.over p{
+    right: -50%;
+    font-size: 14px;
+}
+
+.ove{
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translate(-70%, -50%);
+    display: block;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-/* Variables */
-:root {
-    --primary-color: #FF6565;
-    --secondary-color: #333;
-    --font-family: 'Source Sans Pro', sans-serif;
-    --max-width: 1000px;
-    --padding: 20px;
-}
-
-body {
-    font-family: var(--font-family);
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: var(--padding);
-}
-
-header {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: var(--padding) 0;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    height: 50px;
-}
-
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-nav a:hover, nav a:active {
-    color: var(--primary-color);
-}
-
-.hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.hero button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.hero button:hover, .hero button:active {
-    opacity: 0.9;
-}
-
-
-
-body {
-    font-family: var(--font-family);
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: var(--padding);
-}
-
-.what-we-do {
-    padding: 50px 0;
+.ove h2{
     text-align: center;
 }
-
-.what-we-do h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
+.ove p{
+    right: -50%;
+    font-size: 14px;
 }
-
-.service {
-    display: inline-block;
-    width: 30%;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 10px;
+.ovelay{
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translate(-70%, -50%);
+    display: block;
 }
-
-.service .icon {
-    font-size: 50px;
-    margin-bottom: 20px;
-    color: var(--primary-color);
-}
-
-.service h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.service p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* "Our results" section styles */
-.our-results {
-    padding: 50px 0;
+.ovelay h2{
     text-align: center;
 }
-
-.our-results h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-.result {
-    display: inline-block;
-    width: 30%;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 10px;
-}
-
-.result img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.result h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.result p {
-    font-size: 16px;
-    color: #666;
-}
-
-@media (max-width: 480px) {
-    .service,
-    .result {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+.ovelay p{
+    right: -50%;
+    font-size: 14px;
 }
